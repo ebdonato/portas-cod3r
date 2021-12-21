@@ -1,3 +1,7 @@
+# Projeto Porta Premiada
+
+Projeto exercício do curso [Next.js & React - Curso Completo - Totalmente Baseado em Projetos](https://www.cod3r.com.br/courses/nextjs)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
