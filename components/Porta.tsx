@@ -14,7 +14,7 @@ export default function Porta(props: IPortaProps) {
 
     const alternarSelecao = () => props.quandoClicar(porta.alternarSelecao());
 
-    const abrir = (event) => {
+    const abrir = (event: React.MouseEvent<HTMLElement>) => {
         event.stopPropagation();
         props.quandoClicar(porta.abrir());
     };
