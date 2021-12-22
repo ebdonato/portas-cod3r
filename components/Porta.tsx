@@ -1,5 +1,6 @@
 import PortaModelo from "../models/PortaModelo";
 import styles from "../styles/Porta.module.css";
+import Presente from "./Presente";
 
 interface IPortaProps {
     porta: PortaModelo;
@@ -28,7 +29,13 @@ export default function Porta(props: IPortaProps) {
     return (
         <div className={styles.area} onClick={alternarSelecao}>
             <div className={`${styles.estrutura} ${selecionada}`}>
-                {porta.aberta ? false : renderizarPorta()}
+                {porta.fechada ? (
+                    renderizarPorta()
+                ) : porta.temPresente ? (
+                    <Presente />
+                ) : (
+                    false
+                )}
             </div>
             <div className={styles.chao} />
         </div>
